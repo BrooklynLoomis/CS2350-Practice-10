@@ -38,11 +38,11 @@ function getCards(){
 }
 
 function addNewCard(event){
-  event.preventDefault
+  event.preventDefault()
 
-  let t = document.querySelector("#place").value
-  let d = document.querySelector("#description").value
-  let p = document.querySelector("#poster").value
+  let t = document.querySelector("#Place").value
+  let d = document.querySelector("#Description").value
+  let p = document.querySelector("#Poster").value
 
   let cards = getCards()
   
@@ -99,7 +99,7 @@ function displayCards(){
   hideForm()
 }
 
-document.querySelector("#myForm").onSubmit = addNewCard
-document.querySelector("#new_card").onClick = hideCards
-document.querySelector(".to-cancel").onClick = hideForm
+document.querySelector("#myForm").onsubmit = addNewCard
+document.querySelector(".new_card").onclick = hideCards
+document.querySelector(".to-cancel").onclick = hideForm
 displayCards()
